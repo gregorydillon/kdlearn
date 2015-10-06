@@ -14,7 +14,9 @@ https://chrome.google.com/webstore/detail/pnhechapfaindjhompbnflcldabbghjo
 
 
 
-### Step 1b: Choose your editor  (suggestion Caret)
+### Step 1b: Choose your editor  
+
+This method assumes that you have a code editor locally installed on your Chromebook.   As of October 2015 it seems Caret is the most frequent choice, and is used in this guide
 
 https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?utm_source=chrome-app-launcher-search
 
