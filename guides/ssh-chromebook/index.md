@@ -1,26 +1,27 @@
 ---
 title: Using SSH on a Chromebook to connect to your Koding VM
-author: Team Koding
+author: Team Koding, Gregory Dillon edit to Secure Shell method
 categories: [koding features, ssh]
 ---
 
-In this guide, we will cover how to set up ssh on your Chromebook. There are
-two ways you can use SSH on a Chromebook. You can either install [Google's SSH
+In this guide, we will cover how to set up ssh on your Chromebook. Install [Google's SSH
 Chrome extention](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo)
-or use the native SSH client that is built into the Chrome OS. For the purposes
-of this guide, we will use the native SSH client method as it does not
-require the installation of any new software.
 
-### Step 1: Verify you have crosh installed
-Before beginning, make sure that you have a newer build of Chrome OS (build 32 or above)
-and that your particular build supports the built in `crosh` shell which contains
-the SSH client that we will use. To check, press `ctrl-alt-T` on your keyboard
-and you should be greeted with a screen similar to the one below.
-![crosh shell](crosh.png)
+### Step 1a: Install Secure Shell or Check its installed
 
-If you do not get the above screen, chances are high that you either have an older
-build of Chrome OS or that your device manufacturer has opted to remove crosh from
-their customd build of the Chrome OS.
+### Step 1b: Choose your editor  (suggestion Caret)
+
+https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?utm_source=chrome-app-launcher-search
+
+Verify you have Secure Shell and Caret installed
+
+The Secure Shell looks like
+
+
+Caret looks like
+
+
+
 
 ### Step 2: Generate the required ssh private and public keys on your VM
 > type:tip
@@ -30,6 +31,7 @@ skip the section below
 Open up Terminal on your Koding VM and type in the following command:
 ```
 ssh-keygen
+(no spaces)
 ```
 You will be presented with a few choices, accept all defaults until
 you end up with something like this:
@@ -57,9 +59,8 @@ The key's randomart image is:
 +-----------------+
 ```
 
-### Step 3: Copy the generated public key to authotized_keys file on your VM
-Doing this allows your Chromebook to be recognized as a valid host (once we copy
-over the private keys, which is the next step).
+### Step 3: Copy the contents of id_rsa.pub into an authorized_keys file.
+
 
 Create an `authorized_keys` file (if it does not exist)
 ```
@@ -73,25 +74,28 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
 ### Step 4: Moving the generated private key to your Chromebook
-To achieve this, we will first copy over the private key to
-our Web folder so that we can download it over the browser.
+To achieve this, we will open the file id_rsa.pub in the Koding VM
+select all the file Ctrl-A
+Copy all the file Ctrl-C
+open a new document in Caret
+paste into the Caret Document
+Using Caret, save file as id_rsa.pub
 
-> type:alert
-> After downloading the private key you should immediately
-delete if from your Web folder. This is not the most secure way
-of copying over your file but is the easiest. If you prefer, you
-can also upload the file to your Google Drive account and then
-download it your Chromebook.
+Do the same steps for id_rsa
+Copy all the file Ctrl-C
+open a new document in Caret
+paste into the Caret Document
+Using Caret, save file as id_rsa
 
-Copy the private key to your Web folder:
-```
-cp ~/.ssh/id_rsa ~/Web/.
-chmod 655 ~/Web/id_rsa
-```
+## Step 5
+back in Koding, get the web url of your VM by
+click here
 
-Now hop over to your Chromebook and type in the Web URL of your VM to
-download this file. The Web URL of your VM usually is:
-```
+It will open the below, and copy
+copy this
+
+
+
 yourusername.koding.io/id_rsa
 ```
 ![save-as](save-as.png)
