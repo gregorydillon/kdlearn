@@ -7,7 +7,12 @@ categories: [koding features, ssh]
 In this guide, we will cover how to set up ssh on your Chromebook. Install [Google's SSH
 Chrome extention](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo)
 
-### Step 1a: Install Secure Shell or Check its installed
+### Step 1a: Install Secure Shell 
+Or if installed just verify
+
+https://chrome.google.com/webstore/detail/pnhechapfaindjhompbnflcldabbghjo
+
+
 
 ### Step 1b: Choose your editor  (suggestion Caret)
 
