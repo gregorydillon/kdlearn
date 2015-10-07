@@ -11,7 +11,7 @@ In this guide we'll go over the Koding Terminal. We'll try to explain how it wor
 
 ## Getting started
 
-To access a Koding Terminal, select your Virtual Machine on the left hand side as pictured bellow.
+To access a Koding Terminal, select your Virtual Machine on the left hand side as pictured below.
 
 ![Terminal 1](term1.png)
 
@@ -49,7 +49,7 @@ Because the Terminal is in a tab in the IDE you can also split, merge splits, an
 
 ## Tips
 
-The Koding Terminal comes preinstalled with some useful programms that can be run using these commands.
+The Koding Terminal comes preinstalled with some useful programs that can be run using these commands.
 
 * `fish` - is a smart and user-friendly command line shell for OS X, Linux.
 * `mc` - Midnight Commander is a powerful file manager. GNU Midnight Commander is a text-mode full-screen file manager.
@@ -57,15 +57,15 @@ The Koding Terminal comes preinstalled with some useful programms that can be ru
 * `nano` - text editor for the command line.
 * `emacs` - GNU Emacs is an extensible, customizable text editor.
 
-Bellow you can read more about some other useful commands that you can use in your Koding Terminal.
+Below you can read more about some other useful commands that you can use in your Koding Terminal.
 
-* `sudo` - most of the bellow commands will need to be prefaced with the sudo command. This elevates privileges to the root-user administrative level temporarily, which is necessary when working with directories or files not owned by your user account.
+* `sudo` - most of the below commands will need to be prefaced with the sudo command. This elevates privileges to the root-user administrative level temporarily, which is necessary when working with directories or files not owned by your user account.
 
 ### File & Directory Commands
 
 The tilde (~) symbol stands for your home directory. If you are user, then the tilde (~) stands for `/home/user`
 
-* `pwd` - The `pwd` command will allow you to know in which directory you're located. A useful gnemonic is "present working directory."
+* `pwd` - The `pwd` command will allow you to know in which directory you're located. A useful mnemonic is "present working directory."
 * `ls` - The `ls` command will show you ('list') the files in your current directory.
 * `cd` - The `cd` command will allow you to change directories. Eg. to navigate into the root directory, use `cd /`.
 * `cp` - The `cp` command will make a copy of a file for you. Example: "cp file foo" will make an exact copy of "file" and name it "foo", but the file "file" will still be there.
